@@ -41,6 +41,6 @@ An example User model is provided in app/models.py for a SQL database like SQLit
 TODO
 ----
 
-# Update Migrate scripts for the MongoDB models
-# Add requirements for pip installation
-# etc. - It's open source project, so contributions are welcome
+- Update Migrate scripts for the MongoDB models
+- Add requirements for pip installation
+- etc. - It's open source project, so contributions are welcome
