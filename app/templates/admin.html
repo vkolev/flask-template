@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+{% if g.user.is_authenticated() %}
+    <h1>Administrtor: {{g.user.username}}!</h1>
+{% else %}
+    <h1>You shouldn't be here!</h1>
+{% endif %}
+    <div class="row-fluid">
+        <div class="well well-mini">
+            <p>This is your Administration page</p>
+        </div>
+    </div>
+{% endblock %}

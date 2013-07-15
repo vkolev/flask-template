@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{% if g.user.is_authenticated() %}
+    <h1>Hi, {{g.user.username}}!</h1>
+{% else %}
+    <h1>Hi there!</h1>
+{% endif %}
+    <div class="row-fluid">
+        <div class="well well-mini">
+            <p>This is your frontpage, if you want to be greeted with your username, you should <a href="/login">log in</a>. After
+            login with username and password you can check the <a href="/admin">Admin</a> page.</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{title}}</title>
+        {% else %}
+        <title>Welcome to Flask-Template</title>
+        {% endif %}
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" media="screen" />
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="/">Flask-Template</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="/index">Home</a></li>
+                        {% if g.user.is_authenticated() %}
+                        <li><a href="{{ url_for('admin') }}">Admin</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+                        {% if g.user.is_authenticated() %}
+                        <li><a href="/logout">Logout</a></li>
+                        {% else %}
+                        <li><a href="/login">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+                </div>
+           </div>
+        </div>
+        <div class="container-narrow">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert"><button class="close" data-dismiss="alert">&times;</button> {{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>
