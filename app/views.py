@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from app import app, db, lm
-from forms import LoginForm, EditForm, PostForm
+from forms import LoginForm
 from models import User
 import hashlib
 from datetime import datetime
@@ -13,6 +13,7 @@ def before_request():
 
 
 @app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index(page=1):
     return render_template("index.html",
                            title='Home')
