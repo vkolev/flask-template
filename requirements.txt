@@ -1,0 +1,6 @@
+Flask==0.10.1
+Flask-Login==0.2.5
+Flask-MongoAlchemy==0.5.4
+Flask-SQLAlchemy==0.16
+Flask-WTF==0.8.4
+sqlalchemy-migrate==0.7.2

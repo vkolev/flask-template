@@ -7,6 +7,10 @@ Best to be used for development under virtualenv
 Requires
 --------
 
+Install requirements using ```pip install -r requirements.txt```.
+
+This installs the following:
+
 - Flask
 - Flask-WTF
 - Flask-Login
@@ -43,7 +47,6 @@ TODO
 ----
 
 - Updated Migrate scripts for the MongoDB models
-- Add requirements for pip installation
 - etc. - It's open source project, so contributions are welcome
 
 
