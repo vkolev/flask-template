@@ -7,17 +7,17 @@ Best to be used for development under virtualenv
 Requires
 --------
 
-Flask
-Flask-WTF
-Flask-Login
-Flask-SQLAlchemy (if used with SQL Databases)
-SQLAlchemy-Migrate (if used with SQL Databases)
-Flask-MongoAlchemy (if used with MongoDB)
+- Flask
+- Flask-WTF
+- Flask-Login
+- Flask-SQLAlchemy (if used with SQL Databases)
+- SQLAlchemy-Migrate (if used with SQL Databases)
+- Flask-MongoAlchemy (if used with MongoDB)
 
 Scripts
 -------
 
-The Scripts db_create.py, db_migrate.py and db_upgrade.py are meant to be used with SQLAlchemy for migrations
+The Scripts ```db_create.py```, ```db_migrate.py``` and ```db_upgrade.py``` are meant to be used with SQLAlchemy for migrations
 
 Models
 ------
