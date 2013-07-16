@@ -7,17 +7,21 @@ Best to be used for development under virtualenv
 Requires
 --------
 
-Flask
-Flask-WTF
-Flask-Login
-Flask-SQLAlchemy (if used with SQL Databases)
-SQLAlchemy-Migrate (if used with SQL Databases)
-Flask-MongoAlchemy (if used with MongoDB)
+Install requirements using ```pip install -r requirements.txt```.
+
+This installs the following:
+
+- Flask
+- Flask-WTF
+- Flask-Login
+- Flask-SQLAlchemy (for SQL Databases)
+- SQLAlchemy-Migrate (for SQL Databases)
+- Flask-MongoAlchemy (for MongoDB)
 
 Scripts
 -------
 
-The Scripts db_create.py, db_migrate.py and db_upgrade.py are meant to be used with SQLAlchemy for migrations
+The Scripts ```db_create.py```, ```db_migrate.py``` and ```db_upgrade.py``` are meant to be used with SQLAlchemy for migrations
 
 Models
 ------
@@ -43,7 +47,6 @@ TODO
 ----
 
 - Updated Migrate scripts for the MongoDB models
-- Add requirements for pip installation
 - etc. - It's open source project, so contributions are welcome
 
 
