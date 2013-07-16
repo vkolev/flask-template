@@ -26,7 +26,7 @@ The Scripts ```db_create.py```, ```db_migrate.py``` and ```db_upgrade.py``` are 
 Models
 ------
 
-An example User model is provided in app/models.py for a SQL database like SQLite you will to add the following table:
+An example User model is provided in app/models.py. For SQL database like SQLite you will have to add the following table:
 
     CREATE TABLE user (
         id INTEGER NOT NULL,
