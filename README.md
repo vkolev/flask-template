@@ -14,9 +14,9 @@ This installs the following:
 - Flask
 - Flask-WTF
 - Flask-Login
-- Flask-SQLAlchemy (if used with SQL Databases)
-- SQLAlchemy-Migrate (if used with SQL Databases)
-- Flask-MongoAlchemy (if used with MongoDB)
+- Flask-SQLAlchemy (for SQL Databases)
+- SQLAlchemy-Migrate (for SQL Databases)
+- Flask-MongoAlchemy (for MongoDB)
 
 Scripts
 -------
