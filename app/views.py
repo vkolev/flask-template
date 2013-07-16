@@ -43,8 +43,9 @@ def login():
 def admin():
     g.user = current_user
     return render_template("admin.html",
-                            title="Administration",
+                           title="Administration",
                            user=g.user)
+
 
 @app.route('/logout')
 @login_required
